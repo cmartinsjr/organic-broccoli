@@ -24,10 +24,10 @@ jobs:
 
       - name: Upload to Prisma Cloud
         env:
-          PRISMA_URL: ${{ secrets.PRISMA_URL }}
+          PRISMA_URL: ${{ vars.PRISMA_URL }}
           PRISMA_USERNAME: ${{ secrets.PRISMA_USERNAME }}
           PRISMA_PASSWORD: ${{ secrets.PRISMA_PASSWORD }}
-          PRISMA_REPO_ID: ${{ secrets.PRISMA_REPO_ID }}
+          PRISMA_REPO_ID: ${{ vars.PRISMA_REPO_ID }}
         run: |
           # Authenticate with Prisma Cloud
           AUTH_RESPONSE=$(curl -L "$PRISMA_URL/login" \
