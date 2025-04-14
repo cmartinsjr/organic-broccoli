@@ -1,5 +1,5 @@
 # CAS Metrics Script
-# small change for scan test 5
+# small change for scan test 6
 
 This script retrieves various Prisma Cloud Application Security (CAS) metrics from an API endpoint. It performs multiple checks related to CI/CD findings, code security issues, secret exposure, and pipeline runs, and provides feedback based on predefined thresholds.
 
